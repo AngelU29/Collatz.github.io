@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conjetura Collatz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="inicio();"> 
+    
+    <div class="cuadrado cuadrado1"></div>
+    <div class="cuadrado cuadrado2"></div>
+    <div class="cuadrado cuadrado3"></div>
+    <div class="cuadrado cuadrado4"></div>
+    <div class="cuadrado cuadrado5"></div>
+    <div class="cuadrado cuadrado6"></div>
+<header>
+    <h1> Como funciona?</h1>
+    <p> Cuando el numero es par se divide entre 2 
+        <br>Pero cuando el numero es impar este se multiplica por 3 y se le suma 1 
+        <br>Es decir 3x+1
+    </p>
+</header>
+
+<table class="Pad">
+    <tr>
+        <td colspan="3">
+                <span id="resultado"></span>
+        </td>
+    </tr>    
+    <tr>
+        <td> <button id="siete">7</button></td>
+        <td> <button id="ocho">8</button></td>
+        <td> <button id="nueve">9</button></td>
+    </tr>
+    <tr>
+        <td> <button id="cuatro">4</button></td>
+        <td> <button id="cinco">5</button></td>
+        <td> <button id="seis">6</button></td>
+    </tr>
+    <tr>
+        <td> <button id="uno">1</button></td>
+        <td> <button id="dos">2</button></td>
+        <td> <button id="tres">3</button></td>
+    </tr>
+    <tr>
+        <td><button id="reinicio">←</button></td>
+        <td><button id="cero">0</button></td>
+        <td> <button id="Aceptar">Aceptar</button></td>
+    </tr>
+</table>
+
+    
+<div>
+    <h3>Grafica</h3>
+</div>
+
+
+
+    <script src="Funciones.js">
+
+    </script>
+    
+</body>
+</html>
