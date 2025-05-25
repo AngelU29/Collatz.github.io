@@ -23,7 +23,6 @@ p{
     background-color: rgb(213, 228, 207);
 }
 table{
-    
     position: absolute;
     align-items: center 100px;
     top: 35%;
@@ -96,6 +95,7 @@ table{
     width: 300px;
     background-color: rgb(157, 204, 155);
     border-radius: 10px;
+    z-index: 200;
 }
 #Aceptar{
     position: absolute;
@@ -149,4 +149,47 @@ table{
     height: 110px;
     width: 110px;
 }
-
+.overlay{
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    opacity: 50%;
+    height: 0px;
+    width: 0px;
+    border-radius: 15px;
+    background-color: cadetblue;
+    transition: opacity 0.5s ease-in-out;
+    pointer-events: none;
+}
+.expandiendo {
+    animation: expandir 0.5s forwards ease-out;
+    opacity: 1;
+}
+@keyframes expandir {
+    from {
+        width: 0;
+        height: 0;
+    }
+    to {
+        width: 570px; /* Tamaño final igual al de la tabla */
+        height: 470px;
+    }
+}
+#graficaContainer {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    height: 300px;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Grafica {
+    width: 100%;
+    height: 100%;
+}
