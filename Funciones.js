@@ -70,6 +70,30 @@ Aceptar.onclick = function(e){
     ajustarPosicionResultado();
 
     document.getElementById('Grafica').style.display = 'block';
+
+    // Crear el botón de recarga
+    var botonRecargar = document.createElement("button");
+    botonRecargar.textContent = "Recargar";
+    botonRecargar.id = "recargar";
+    botonRecargar.style.position = "absolute";
+    botonRecargar.style.top = "390px";
+    botonRecargar.style.left = "35%";
+    botonRecargar.style.transform = "translateX(-50%)";
+    botonRecargar.style.fontSize = "20px";
+    botonRecargar.style.padding = "10px";
+    botonRecargar.style.borderRadius = "10px";
+    botonRecargar.style.backgroundColor = "red";
+    botonRecargar.style.color = "white";
+    botonRecargar.style.cursor = "pointer";
+
+    // Agregar funcionalidad de recarga
+    botonRecargar.onclick = function() {
+        location.reload();
+    };
+
+    // Agregar el botón al cuerpo del documento
+    document.body.appendChild(botonRecargar);
+    
 }
 
 function limpiar(){
@@ -173,3 +197,4 @@ function graficarCollatz(secuencia) {
 function inicio() {
     document.getElementById('Grafica').style.display = 'none'; 
 }
+
