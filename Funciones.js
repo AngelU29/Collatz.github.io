@@ -73,11 +73,11 @@ Aceptar.onclick = function(e){
 
     // Crear el botón de recarga
     var botonRecargar = document.createElement("button");
-    botonRecargar.textContent = "Recargar";
+    botonRecargar.textContent = "Restart";
     botonRecargar.id = "recargar";
-    botonRecargar.style.position = "absolute";
-    botonRecargar.style.top = "390px";
-    botonRecargar.style.left = "35%";
+    botonRecargar.style.position = "absolut e";
+    botonRecargar.style.top = "900px";
+    botonRecargar.style.left = "25%";
     botonRecargar.style.transform = "translateX(-50%)";
     botonRecargar.style.fontSize = "20px";
     botonRecargar.style.padding = "10px";
